@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GKD</display-name>
+   
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<filter-class>src.com.filter.LoginFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/contact.jsp</url-pattern>
+  	<url-pattern>/upload.jsp</url-pattern>
+  	<url-pattern>/InsertCommentServlet</url-pattern>
+  	<url-pattern>/InsertCollectionServlet</url-pattern>
+  	<url-pattern>/uploaded.jsp</url-pattern>
+  	<url-pattern>/uploadsuccess.jsp</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>InsertCommentServlet</servlet-name>
+    <servlet-class>src.com.servlet.InsertCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidVideoServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>src.com.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>src.com.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>userIndexServlet</servlet-name>
+    <servlet-class>src.com.servlet.userIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>src.com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertCollectionServlet</servlet-name>
+    <servlet-class>src.com.servlet.InsertCollectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidVideoUploadServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidVideoUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidVideoInfoUploadServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidVideoInfoUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidImgUploadServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidImgUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidCommentServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidVideosServlet</servlet-name>
+    <servlet-class>src.com.servlet.AndroidVideosServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  
+  <servlet-mapping>
+    <servlet-name>InsertCommentServlet</servlet-name>
+    <url-pattern>/InsertCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidVideoServlet</servlet-name>
+    <url-pattern>/AndroidVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>userIndexServlet</servlet-name>
+    <url-pattern>/userIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertCollectionServlet</servlet-name>
+    <url-pattern>/InsertCollectionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidVideoUploadServlet</servlet-name>
+    <url-pattern>/AndroidVideoUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidVideoInfoUploadServlet</servlet-name>
+    <url-pattern>/AndroidVideoInfoUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidImgUploadServlet</servlet-name>
+    <url-pattern>/AndroidImgUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidCommentServlet</servlet-name>
+    <url-pattern>/AndroidCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidVideosServlet</servlet-name>
+    <url-pattern>/AndroidVideosServlet</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
